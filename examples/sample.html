@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css" />
+  <title>jquery.facebook-auth</title>
+</head>
+<body style="padding-top: 60px;">
+  <div id="fb-root"></div>
+  <script src="//connect.facebook.net/en_US/all.js"></script>
+  <script>
+    FB.init({appId:'130440643727767',status:true,oauth:true});
+  </script>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="container">
+        <a href="sample.html" class="brand">jquery.facebook-auth</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="span4">
+        <h2>Basic</h2>
+        <p>基本的な使い方はこんな感じ。</p>
+        <p>FB.init とかは、既に行われていることが前提です。</p>
+      </div>
+      <div class="span12">
+        <p>Source:</p>
+        <pre class="prettyprint linenums">&lt;a href=&quot;#&quot; data-facebook-auth-scope=&quot;email,read_stream,user_likes&quot;&gt;Start Application!&lt;/a&gt;</pre>
+        <p>Sample:</p>
+        <p><a href="authenticated.html" data-facebook-auth-scope="email,read_stream,user_likes" class="btn primary">Start Application!</a></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>Crocos Inc.</p>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script src="../src/jquery.facebook-auth.js"></script>
+</body>
+</html>
+
